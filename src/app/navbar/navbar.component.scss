@@ -1,5 +1,6 @@
-/* styles.scss or styles.css */
-
+.navbar {
+  background-color: #241f1f;
+}
 .navbar-brand {
   font-size: 1.5em;
   font-weight: bold;
@@ -17,4 +18,36 @@
 
 .active {
   color: #f0f0f0 !important;
+}
+
+.line-container {
+  position: relative;
+  width: 100%;
+  height: 5vh;
+}
+
+.accent-line {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  width: 70%;
+  height: 3px;
+  background-color: white;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  .line-container {
+    display: none;
+  }
+
+  .accent-line-toggler {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    width: 70%;
+    height: 3px;
+    background-color: white;
+    transform: translateY(-50%);
+  }
 }
