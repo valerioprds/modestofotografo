@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
 
@@ -18,7 +17,6 @@ export class HomeComponent {
     private observer: BreakpointObserver,
     private cdRef: ChangeDetectorRef,
     private router: Router
-
   ) {}
 
   ngAfterViewInit() {
@@ -33,11 +31,4 @@ export class HomeComponent {
       this.cdRef.detectChanges();
     });
   }
-
-
-
-  showProfile() {
-    console.log('button pressed')
-    this.router.navigate(['/profile']);
-    }
 }
