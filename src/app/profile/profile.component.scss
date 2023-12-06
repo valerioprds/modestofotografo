@@ -1,6 +1,8 @@
+@import '/src/variables';
+
 .container-fluid {
   min-height: 100vh;
-  background-color: #241f1f;
+  background-color: $primary-color;
   color: white;
 }
 
