@@ -1,3 +1,6 @@
+@import '/src/variables';
+
+
 .carousel-item,
 .carousel-item img {
   height: 100vh; /* Viewport height */
@@ -30,13 +33,13 @@
         transition: background-color 0.5s ease;
 
         h3 {
-          color: #fff; // White color for headings
+          color: $secondary-color;
           font-weight: bold;
           margin-bottom: 0.5rem;
         }
 
         p {
-          color: #f8f9fa; // Light color for text
+          color:$secondary-color; // Light color for text
         }
 
         &:hover {
