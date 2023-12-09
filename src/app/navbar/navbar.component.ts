@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+constructor(    private dialogRef: MatDialog,
+  ){}
+
+  openContactComponent() {
+    const dialogRef = this.dialogRef.open(ContactComponent, {
+      width: '900px',
+      height: 'auto',
+    });
+  }
 }

@@ -14,9 +14,12 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainComponent } from './main/main.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent],
+  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +29,7 @@ import { MainComponent } from './main/main.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
