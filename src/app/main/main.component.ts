@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
+  @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
+  ngAfterViewInit() {
+    const carouselElement = this.carousel.nativeElement;
+    // Initialize carousel here if needed
+  }
 }
