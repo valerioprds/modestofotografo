@@ -3,7 +3,7 @@
 .logo {
   max-width: 100px; // Adjust the max-width as needed
   height: auto; // This ensures the logo maintains its aspect ratio
-  // Add additional styling if needed
+  cursor: pointer;
 }
 
 .navbar {
@@ -23,11 +23,12 @@
 }
 
 .nav-link:hover {
-  color: #f0f0f0 !important;
+  color: $secondary-color !important;
+  border-bottom: 2px solid $secondary-color;
 }
 
 .active {
-  color: #f0f0f0 !important;
+  color: $secondary-color !important;
 }
 
 .line-container {
@@ -42,7 +43,7 @@
   top: 50%;
   width: 70%;
   height: 3px;
-  background-color: white;
+  background-color:  $secondary-color;
   transform: translateY(-50%);
 }
 

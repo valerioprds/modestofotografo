@@ -1,9 +1,17 @@
-@import '/src/variables';
+@import "/src/variables";
 
 .container-fluid {
   min-height: 100vh;
   background-color: $primary-color;
-  color: white;
+  color: $secondary-color !important;
+}
+
+.lead {
+  color: $secondary-color ;
+}
+
+.profile-title {
+  color: $secondary-color ;
 }
 
 .profile-picture {
