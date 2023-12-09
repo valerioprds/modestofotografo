@@ -3,3 +3,70 @@
   height: 100vh; /* Viewport height */
   object-fit: cover; /* Ensures images cover the area without stretching */
 }
+
+/* Carousel Styling */
+#carouselExampleCaptions {
+  .carousel-inner {
+    .carousel-item {
+      // Adjust transition for smoother sliding effect
+      transition: transform 1s ease-in-out;
+
+      img {
+        // Apply a subtle filter effect to the images
+        filter: brightness(90%) contrast(110%);
+        transition: filter 0.5s ease-in-out;
+
+        &:hover {
+          // Slightly increase brightness on hover for an interactive effect
+          filter: brightness(100%) contrast(110%);
+        }
+      }
+
+      .carousel-caption {
+        // Style for the caption area
+        background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+        padding: 1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.5s ease;
+
+        h3 {
+          color: #fff; // White color for headings
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: #f8f9fa; // Light color for text
+        }
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7); // Darken background on hover
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    // Style for the control buttons
+    span {
+      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+
+  .carousel-indicators {
+    button {
+      // Custom style for indicators
+      background-color: #007bff; // Use Bootstrap primary color
+      border: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      &.active {
+        background-color: #0056b3; // Darker color for active indicator
+      }
+    }
+  }
+}
