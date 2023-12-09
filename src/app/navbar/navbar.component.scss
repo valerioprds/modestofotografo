@@ -1,8 +1,15 @@
 @import '/src/variables';
 
+.logo {
+  max-width: 100px; // Adjust the max-width as needed
+  height: auto; // This ensures the logo maintains its aspect ratio
+  // Add additional styling if needed
+}
 
 .navbar {
   background-color: $primary-color;
+  padding: 0.5rem 1rem; // Adjust padding to reduce navbar height if needed
+
 }
 .navbar-brand {
   font-size: 1.5em;
@@ -39,7 +46,15 @@
   transform: translateY(-50%);
 }
 
-@media (max-width: 991.98px) {
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 80px; // Smaller logo for mobile devices
+  }
+}
+
+
+/* @media (max-width: 991.98px) {
   .line-container {
     display: none;
   }
@@ -53,4 +68,4 @@
     background-color: white;
     transform: translateY(-50%);
   }
-}
+} */
