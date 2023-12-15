@@ -16,10 +16,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainComponent } from './main/main.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent],
+  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent, GalleryComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

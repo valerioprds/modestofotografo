@@ -14,7 +14,7 @@ constructor(    private dialogRef: MatDialog,
 
   openContactComponent() {
     const dialogRef = this.dialogRef.open(ContactComponent, {
-      width: '900px',
+      width: '700px',
       height: 'auto',
     });
   }
