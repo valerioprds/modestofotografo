@@ -1,5 +1,8 @@
+@import '/src/variables';
+
+
 .gallery-container {
-  padding: 20px;
+  background-color: $primary-color;
 }
 .gallery-title {
   text-align: center;
@@ -8,8 +11,16 @@
 .gallery-image {
   margin-bottom: 20px;
 }
+
+.img-fluid {
+  border-radius: 10px;
+
+}
 .image-caption {
   display: block;
   text-align: center;
   margin-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  
 }
