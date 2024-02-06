@@ -17,10 +17,11 @@ import { MainComponent } from './main/main.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
+import { Wedding1Component } from './photogallery/wedding1/wedding1.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent, WeddingsComponent],
+  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent, WeddingsComponent, Wedding1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
