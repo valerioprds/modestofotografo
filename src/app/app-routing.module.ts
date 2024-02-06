@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'gallery', component: GalleryComponent },
+  { path: 'weddings', component: WeddingsComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
