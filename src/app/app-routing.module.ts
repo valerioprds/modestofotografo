@@ -11,8 +11,10 @@ const routes: Routes = [
   {
     path: 'weddings',
     component: WeddingsComponent,
-    children: [{ path: 'wedding1', component: Wedding1Component }],
+   /*  children: [{ path: 'wedding1', component: Wedding1Component }], */
   },
+  { path: 'wedding1', component: Wedding1Component },
+
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

@@ -15,4 +15,12 @@ export class Wedding1Component {
     },
     // ... other photo objects
   ];
+  getPhotoStyle(index: number) {
+    const rotation =
+      (index % 2 === 0 ? '' : '-') + (Math.random() * 20).toFixed(2);
+    return {
+      transform: `rotate(${rotation}deg)`,
+      zIndex: index,
+    };
+  }
 }
