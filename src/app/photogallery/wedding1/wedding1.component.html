@@ -3,9 +3,9 @@
   <div class="img-container">
     <h1 class="text-white text-center m-5">Will and Kate</h1>
     <div class="row">
-      <div *ngFor="let image of images; let i = index" class="col-6 mb-4">
+      <!-- Adjust col-md-6 for medium devices and col-lg-6 for large devices -->
+      <div *ngFor="let image of images; let i = index" class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
         <img [src]="image.src" [alt]="image.alt" class="img-fluid" />
-        <!-- Use col-6 to make two images per row -->
       </div>
     </div>
   </div>
