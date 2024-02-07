@@ -1,7 +1,18 @@
 <app-navbar></app-navbar>
 <div class="container-fluid gallery-container">
-  <h2 class="gallery-title text-white">Weddings</h2>
+  <h2 class="gallery-title text-white">Mis Trabajos</h2>
   <div class="row">
+    <div class="col-md-6 gallery-image">
+      <a [routerLink]="['/wedding1']">
+        <div class="image-overlay-container">
+          <img src="/assets/weddings-img/wedding1.webp" class="img-fluid" alt="A countryside wedding"/>
+          <div class="overlay">
+            <div class="text">A countryside wedding</div>
+          </div>
+        </div>
+      </a>
+      <span class="image-caption">A countryside wedding</span>
+    </div>
     <div class="col-md-6 gallery-image">
       <a [routerLink]="['/wedding1']">
         <img
@@ -12,20 +23,22 @@
       <span class="image-caption">A countryside wedding</span>
     </div>
     <div class="col-md-6 gallery-image">
-      <img src="/assets/weddings-img/wedding1.webp" class="img-fluid" alt="The island" />
-      <span class="image-caption">The island</span>
+      <a [routerLink]="['/wedding1']">
+        <img
+          src="/assets/weddings-img/wedding1.webp"
+          class="img-fluid"
+          alt="A countryside wedding"
+      /></a>
+      <span class="image-caption">A countryside wedding</span>
     </div>
     <div class="col-md-6 gallery-image">
-      <img src="/assets/weddings-img/wedding1.webp" class="img-fluid" alt="The great gig" />
-      <span class="image-caption">The great gig</span>
-    </div>
-    <div class="col-md-6 gallery-image">
-      <img
-        src="/assets/weddings-img/wedding1.webp"
-        class="img-fluid"
-        alt="A village by the sea"
-      />
-      <span class="image-caption">A village by the sea</span>
+      <a [routerLink]="['/wedding1']">
+        <img
+          src="/assets/weddings-img/wedding1.webp"
+          class="img-fluid"
+          alt="A countryside wedding"
+      /></a>
+      <span class="image-caption">A countryside wedding</span>
     </div>
   </div>
 </div>
