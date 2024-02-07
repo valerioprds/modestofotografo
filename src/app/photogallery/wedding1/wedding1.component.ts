@@ -6,21 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./wedding1.component.scss'],
 })
 export class Wedding1Component {
-  weddingPhotos = [
-    {
-      url: '/assets/weddings-img/wedding3.jpg',
-      title: 'A countryside wedding',
-      description:
-        'A beautiful shot capturing the essence of a countryside wedding.',
-    },
-    // ... other photo objects
+  images = [
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 1' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 2' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 1' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 2' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 1' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 2' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 1' },
+    { src: '/assets/weddings-img/wedding1.webp', alt: 'Image description 2' },
+    // Add more images as needed
   ];
-  getPhotoStyle(index: number) {
-    const rotation =
-      (index % 2 === 0 ? '' : '-') + (Math.random() * 20).toFixed(2);
-    return {
-      transform: `rotate(${rotation}deg)`,
-      zIndex: index,
-    };
-  }
 }

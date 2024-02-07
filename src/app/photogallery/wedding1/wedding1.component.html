@@ -1,17 +1,12 @@
-<!-- collage.component.html -->
-
-<div class="container mt-3 collage-container">
-  <h2 class="text-center mb-5 text-white">Wedding Portfolio</h2>
-
-  <div class="row position-relative">
-    <ng-container *ngFor="let photo of weddingPhotos; let i = index">
-      <div class="col collage-image" [ngStyle]="getPhotoStyle(i)">
-        <img [src]="photo.url" class="img-fluid" [alt]="photo.title">
-        <div class="photo-caption">
-          <h5>{{ photo.title }}</h5>
-          <p>{{ photo.description }}</p>
-        </div>
+<app-navbar></app-navbar>
+<div class="container-fluid d-flex justify-content-center align-items-center">
+  <div class="img-container">
+    <h1 class="text-white text-center m-5">Will and Kate</h1>
+    <div class="row">
+      <div *ngFor="let image of images; let i = index" class="col-6 mb-4">
+        <img [src]="image.src" [alt]="image.alt" class="img-fluid" />
+        <!-- Use col-6 to make two images per row -->
       </div>
-    </ng-container>
+    </div>
   </div>
 </div>

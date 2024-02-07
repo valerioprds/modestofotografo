@@ -1,11 +1,15 @@
+@import '/src/variables';
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
+
+.container-fluid {
+  background-color: $primary-color;
 }
 
-@media (max-width: 767px) {
-  .card-img-top {
-    height: auto; 
-  }
+.img-container{
+  width: 900px;
+}
+
+.row img {
+  width: 100%; /* Makes image responsive */
+  border-radius: 5px;
 }
