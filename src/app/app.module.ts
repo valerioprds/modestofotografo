@@ -17,11 +17,19 @@ import { MainComponent } from './main/main.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
-import { Wedding1Component } from './photogallery/wedding1/wedding1.component';
-
+import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, NavbarComponent, MainComponent, ContactComponent, WeddingsComponent, Wedding1Component],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    ProfileComponent,
+    NavbarComponent,
+    MainComponent,
+    ContactComponent,
+    WeddingsComponent,
+    InigobeaComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,7 +39,7 @@ import { Wedding1Component } from './photogallery/wedding1/wedding1.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

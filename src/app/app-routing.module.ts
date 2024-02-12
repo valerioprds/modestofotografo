@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
-import { Wedding1Component } from './photogallery/wedding1/wedding1.component';
+import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +13,7 @@ const routes: Routes = [
     component: WeddingsComponent,
    /*  children: [{ path: 'wedding1', component: Wedding1Component }], */
   },
-  { path: 'bea-iñigo', component: Wedding1Component },
+  { path: 'bea-iñigo', component: InigobeaComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
