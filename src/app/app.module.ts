@@ -18,6 +18,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
+import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
     ContactComponent,
     WeddingsComponent,
     InigobeaComponent,
+    CarlamarcosComponent,
   ],
   imports: [
     BrowserModule,

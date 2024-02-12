@@ -34,13 +34,5 @@
 }
 
 .img-container {
-  animation: fadeIn 1s ease-out; /* Apply the fadeIn animation */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .img-container {
-    width: 100%; /* Full width on smaller screens */
-    margin: 0 10px; /* Adjust margins */
-  }
+  animation: fadeIn 1s ease-out;
 }

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
+import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,8 @@ const routes: Routes = [
    /*  children: [{ path: 'wedding1', component: Wedding1Component }], */
   },
   { path: 'bea-iñigo', component: InigobeaComponent },
+  { path: 'carla-marcos', component: CarlamarcosComponent },
+
 
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
