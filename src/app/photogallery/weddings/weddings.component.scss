@@ -1,5 +1,4 @@
-@import '/src/variables';
-
+@import "/src/variables";
 
 .gallery-container {
   background-color: $primary-color;
@@ -14,7 +13,8 @@
 
 .img-fluid {
   border-radius: 10px;
-
+  width: 820px;
+  height: 461px;
 }
 .image-caption {
   display: block;
@@ -22,29 +22,4 @@
   margin-top: 5px;
   color: #fff;
   font-size: 20px;
-
-}
-
-
-.gallery-image .image-overlay-container {
-  position: relative;
-  width: 100%;
-}
-
-.gallery-image .overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  color: #f1f1f1; /* White text color */
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.gallery-image:hover .overlay {
-  opacity: 1;
 }
