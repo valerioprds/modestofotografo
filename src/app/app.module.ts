@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
 import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
+import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.com
     WeddingsComponent,
     InigobeaComponent,
     CarlamarcosComponent,
+    DavidangelComponent,
   ],
   imports: [
     BrowserModule,
