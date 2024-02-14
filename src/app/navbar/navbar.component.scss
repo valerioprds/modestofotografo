@@ -1,15 +1,14 @@
-@import '/src/variables';
+@import "/src/variables";
 
 .logo {
-  max-width: 100px; // Adjust the max-width as needed
-  height: auto; // This ensures the logo maintains its aspect ratio
+  max-width: 100px;
+  height: auto;
   cursor: pointer;
 }
 
 .navbar {
   background-color: $primary-color;
   padding: 0.5rem 1rem;
-
 }
 .navbar-brand {
   font-size: 1.5em;
@@ -25,6 +24,7 @@
 .nav-link:hover {
   color: $secondary-color !important;
   border-bottom: 2px solid $secondary-color;
+  cursor: pointer;
 }
 
 .active {
@@ -37,36 +37,8 @@
   height: 5vh;
 }
 
-.accent-line {
-  position: absolute;
-  left: -5%;
-  top: 50%;
-  width: 70%;
-  height: 3px;
-  background-color:  $secondary-color;
-  transform: translateY(-50%);
-}
-
-
 @media (max-width: 768px) {
   .logo {
     max-width: 80px; // Smaller logo for mobile devices
   }
 }
-
-
-/* @media (max-width: 991.98px) {
-  .line-container {
-    display: none;
-  }
-
-  .accent-line-toggler {
-    position: absolute;
-    right: -5%;
-    top: 50%;
-    width: 70%;
-    height: 3px;
-    background-color: white;
-    transform: translateY(-50%);
-  }
-} */
