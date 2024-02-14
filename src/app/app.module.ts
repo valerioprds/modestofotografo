@@ -20,6 +20,7 @@ import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
 import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
+import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DavidangelComponent } from './photogallery/davidangel/davidangel.compon
     InigobeaComponent,
     CarlamarcosComponent,
     DavidangelComponent,
+    SandradiegoComponent,
   ],
   imports: [
     BrowserModule,
