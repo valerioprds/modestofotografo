@@ -7,15 +7,43 @@
 }
 
 .lead {
-  color: $secondary-color ;
+  color: $secondary-color;
 }
 
 .profile-title {
-  color: $secondary-color ;
+  color: $secondary-color;
 }
 
 .profile-picture {
   width: 400px;
   height: 400px;
   border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .profile-picture {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 300) {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
 }
