@@ -2,8 +2,13 @@
 
 .gallery-container {
   background-color: $primary-color;
-  height: 100vh;
+  min-height: 100vh;
 }
+
+.gallery-title {
+  color: $secondary-color;
+}
+
 .stretched-link {
   color: $secondary-color;
 }
@@ -14,4 +19,36 @@
   margin-bottom: -1rem;
   border-radius: 0.25rem;
   font-size: 1.25rem;
+  transition: transform 0.3s ease-in-out; /* Add transition for animation */
+  transform: translateY(10px); /* Initial state for animation */
+}
+
+.card {
+  transition: transform 0.3s ease-in-out; /* Ensure smooth scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  z-index: 10; /* Ensure the hovered card is above others */
+}
+
+.card-img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for image and filter */
+}
+
+.card-img:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  filter: brightness(80%); /* Dim image on hover for focus */
+}
+
+.card-img-overlay {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for overlay */
+}
+
+.card:hover .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken overlay on hover */
+}
+
+.card:hover .custom-card-title {
+  transform: translateY(0); /* Slide title up on hover */
 }
