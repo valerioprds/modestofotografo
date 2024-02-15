@@ -1,49 +1,62 @@
 <app-navbar></app-navbar>
-<div class="container-fluid gallery-container">
-  <h2 class="gallery-title text-white">Mis Trabajos</h2>
-  <div class="row">
-    <div class="col-md-6 gallery-image">
-      <a [routerLink]="['/bea-iñigo']">
-        <div class="image-overlay-container">
+<div class="container-fluid gallery-container py-5">
+  <h2 class="gallery-title text-center text-white mb-5">Mis Trabajos</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="col">
+      <div class="card bg-dark text-white">
+        <a [routerLink]="['/bea-iñigo']" class="stretched-link">
           <img
             src="/assets/bea_iñigo/167C7876.jpg"
-            class="img-fluid"
-            alt="fotografo de navarra"
-            loading="lazy"
+            class="card-img"
+            alt="Bea e Iñigo"
           />
-        </div>
-      </a>
-      <span class="image-caption">Bea e Iñigo</span>
+          <div class="card-img-overlay d-flex align-items-end">
+            <h5 class="card-title custom-card-title">Bea e Iñigo</h5>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="col-md-6 gallery-image">
-      <a [routerLink]="['/carla-marcos']">
-        <img
-          src="/assets/carla_marcos/167C3711.jpg"
-          class="img-fluid"
-          alt="fotografo de navarra"
-          loading="lazy"
-      /></a>
-      <span class="image-caption">Carla y Marcos</span>
+    <div class="col">
+      <div class="card bg-dark text-white">
+        <a [routerLink]="['/carla-marcos']" class="stretched-link">
+          <img
+            src="/assets/carla_marcos/167C3711.jpg"
+            class="card-img"
+            alt="Carla y Marcos"
+          />
+          <div class="card-img-overlay d-flex align-items-end">
+            <h5 class="card-title custom-card-title">Carla y Marcos</h5>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="col-md-6 gallery-image">
-      <a [routerLink]="['/david-angel']">
-        <img
-          src="/assets/david_angel/12310190011-min.jpg"
-          class="img-fluid"
-          alt="fotografo de navarra"
-          loading="lazy"
-      /></a>
-      <span class="image-caption">David e Angel</span>
+    <div class="col">
+      <div class="card bg-dark text-white">
+        <a [routerLink]="['/david-angel']" class="stretched-link">
+          <img
+            src="/assets/david_angel/12310190011-min.jpg"
+            class="card-img"
+            alt="David e Angel"
+          />
+          <div class="card-img-overlay d-flex align-items-end">
+            <h5 class="card-title custom-card-title">David e Angel</h5>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="col-md-6 gallery-image">
-      <a [routerLink]="['/sandra-diego']">
-        <img
-          src="/assets/sandra_diego/12308220001.jpg"
-          class="img-fluid"
-          alt="fotografo de navarra"
-          loading="lazy"
-      /></a>
-      <span class="image-caption">Sandra y Diego</span>
+    <div class="col">
+      <div class="card bg-dark text-white">
+        <a [routerLink]="['/sandra-diego']" class="stretched-link">
+          <img
+            src="/assets/sandra_diego/12308220001.jpg"
+            class="card-img"
+            alt="Sandra y Diego"
+          />
+          <div class="card-img-overlay d-flex align-items-end">
+            <h5 class="card-title custom-card-title">Sandra y Diego</h5>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
