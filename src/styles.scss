@@ -2,21 +2,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "/src/variables";
 
-
 html,
 body {
   height: 100%;
 }
 body {
   margin: 0;
-  font-family: "Space Grotesk", sans-serif
+  font-family: "Space Grotesk", sans-serif;
 }
-
-
 
 /* styles of photogallery weddings*/
 
-@import "/src/variables";
 
 .container-fluid {
   background-color: $primary-color;
@@ -63,6 +59,3 @@ h1 {
 .img-container {
   animation: fadeIn 1s ease-out;
 }
-
-
-
