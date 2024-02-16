@@ -3,7 +3,8 @@
 .carousel-item,
 .carousel-item img {
   height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: $primary-color;
 }
 
 /* Carousel Styling */
