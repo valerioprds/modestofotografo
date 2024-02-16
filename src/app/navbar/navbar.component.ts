@@ -12,7 +12,7 @@ export class NavbarComponent {
 
   openContactComponent() {
     const dialogRef = this.dialogRef.open(ContactComponent, {
-      width: '700px',
+      width: '600px',
       height: 'auto',
     });
   }

@@ -51,3 +51,23 @@ h2 {
 .contact-icons {
   font-size: 20px;
 }
+
+@media (max-width: 400px) {
+  .contact-icons {
+    font-size: 16px;
+  }
+  .contact-item {
+    background-color: #ffffff;
+    padding: 6px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
