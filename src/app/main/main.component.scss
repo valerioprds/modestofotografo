@@ -1,10 +1,9 @@
-@import '/src/variables';
-
+@import "/src/variables";
 
 .carousel-item,
 .carousel-item img {
-  height: 100vh; /* Viewport height */
-  object-fit: cover; /* Ensures images cover the area without stretching */
+  height: 100vh;
+  object-fit: cover;
 }
 
 /* Carousel Styling */
@@ -39,7 +38,7 @@
         }
 
         p {
-          color:$secondary-color; // Light color for text
+          color: $secondary-color; // Light color for text
         }
 
         &:hover {
