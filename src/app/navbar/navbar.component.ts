@@ -8,12 +8,22 @@ import { ContactComponent } from '../contact/contact.component';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private dialogRef: MatDialog) {}
+  isContactDialogOpen: boolean = false; // Añadir esta línea
+
+  constructor(private dialog: MatDialog) {}
 
   openContactComponent() {
-    const dialogRef = this.dialogRef.open(ContactComponent, {
-      width: '600px',
-      height: 'auto',
-    });
+    if (!this.isContactDialogOpen) {
+      const dialogRef = this.dialog.open(ContactComponent, {
+        width: '600px',
+        height: 'auto',
+      });
+
+      this.isContactDialogOpen = true;
+
+      dialogRef.afterClosed().subscribe(() => {
+        this.isContactDialogOpen = false;
+      });
+    }
   }
 }

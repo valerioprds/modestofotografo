@@ -31,6 +31,10 @@
   color: $secondary-color !important;
 }
 
+.disabled-link {
+  pointer-events: none;
+  color: grey;
+}
 .line-container {
   position: relative;
   width: 100%;
@@ -39,6 +43,6 @@
 
 @media (max-width: 768px) {
   .logo {
-    max-width: 80px; 
+    max-width: 80px;
   }
 }
