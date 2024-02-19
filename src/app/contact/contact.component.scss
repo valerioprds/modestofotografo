@@ -1,37 +1,33 @@
 @import "/src/variables";
 
-.container-fluid {
-  text-align: center;
+section {
   color: $secondary-color;
-  height: 100vh;
+
 }
-.close-button {
-  cursor: pointer;
-  border: none;
-  background: transparent;
+
+.form-control {
+  background-color: #333;
+  border: 1px solid #555;
+  color: $secondary-color;
 }
-.contact-icons {
-  margin-right: 8px;
+
+.form-control::placeholder {
+  color: #aaa;
 }
-.contact-item a {
-  text-decoration: none;
-  color: inherit;
+
+.form-control:focus {
+  background-color: #444;
+  border-color: #aaa;
 }
-.instagram-icon {
-  color: #cd18c7;
+
+.btn-light {
+  border: 1px solid #fff;
 }
-.contact-form {
-  margin-top: 20px;
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  color: #333;
 }
-.form-input,
-.form-textarea,
-.form-submit {
-  display: block;
-  width: 80%;
-  margin: 10px auto;
-  padding: 10px;
-}
-.form-textarea {
-  resize: vertical;
-}
+
+
 
