@@ -1,33 +1,52 @@
-<div class="contact-container text-center">
-  <!-- style="background-color: #62787e" -->
-  <button class="close-button" (click)="onClose()">
-    <i class="fa fa-times"></i>
-  </button>
+<div class="container-fluid">
 
-  <h2 class="">Mis Datos de Contacto</h2>
+
+  <h2>Mis Datos de Contacto</h2>
   <div class="contact-items-container">
     <div class="contact-item">
       <i class="fa-solid fa-envelope contact-icons"></i>
-      <a href="mailto:modestofotoestudio@gmail.com">
-        modestofotoestudio&#64;gmail.com</a
+      <a href="mailto:modestofotoestudio@gmail.com"
+        >modestofotoestudio@gmail.com</a
       >
     </div>
 
     <div class="contact-item">
       <i class="fa-solid fa-mobile-screen-button contact-icons"></i>
-      <a href="tel:+34657184067" style="text-decoration: none; color: inherit">
-        657184067
-      </a>
+      <a href="tel:+34657184067">657184067</a>
     </div>
 
     <div class="contact-item">
-      <i
-        class="fa-brands fa-instagram contact-icons"
-        style="color: #cd18c7"
-      ></i>
-      <a href="https://www.instagram.com/modesto_651" target="_blank">
-        modesto_651</a
+      <i class="fa-brands fa-instagram contact-icons instagram-icon"></i>
+      <a href="https://www.instagram.com/modesto_651" target="_blank"
+        >modesto_651</a
       >
     </div>
   </div>
+
+  <!-- Contact Form -->
+  <form class="contact-form">
+    <h3>Contacta conmigo</h3>
+    <input
+      type="text"
+      name="name"
+      class="form-input"
+      placeholder="Tu nombre"
+      required
+    />
+    <input
+      type="email"
+      name="email"
+      class="form-input"
+      placeholder="Tu correo electrónico"
+      required
+    />
+    <textarea
+      name="message"
+      class="form-textarea"
+      rows="5"
+      placeholder="Tu mensaje"
+      required
+    ></textarea>
+    <button type="submit" class="form-submit">Enviar Mensaje</button>
+  </form>
 </div>

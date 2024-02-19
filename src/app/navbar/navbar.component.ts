@@ -8,7 +8,7 @@ import { ContactComponent } from '../contact/contact.component';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  isContactDialogOpen: boolean = false; // Añadir esta línea
+/*   isContactDialogOpen: boolean = false; // Añadir esta línea
 
   constructor(private dialog: MatDialog) {}
 
@@ -25,5 +25,5 @@ export class NavbarComponent {
         this.isContactDialogOpen = false;
       });
     }
-  }
+  } */
 }

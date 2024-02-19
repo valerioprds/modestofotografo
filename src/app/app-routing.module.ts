@@ -7,6 +7,7 @@ import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
 import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,12 +15,12 @@ const routes: Routes = [
   {
     path: 'weddings',
     component: WeddingsComponent,
-    /*  children: [{ path: 'wedding1', component: Wedding1Component }], */
   },
   { path: 'bea-iñigo', component: InigobeaComponent },
   { path: 'carla-marcos', component: CarlamarcosComponent },
   { path: 'david-angel', component: DavidangelComponent },
   { path: 'sandra-diego', component: SandradiegoComponent },
+  { path: 'contacto', component: ContactComponent },
 
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
