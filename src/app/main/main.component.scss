@@ -62,13 +62,13 @@
   .carousel-indicators {
     button {
       // Custom style for indicators
-      background-color: #007bff; // Use Bootstrap primary color
+      background-color: #494a4a; // Use Bootstrap primary color
       border: none;
       width: 12px;
       height: 12px;
       border-radius: 50%;
       &.active {
-        background-color: #0056b3; // Darker color for active indicator
+        background-color: #7d7e7e; // Darker color for active indicator
       }
     }
   }
