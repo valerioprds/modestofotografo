@@ -169,7 +169,7 @@
             </span>
           </div>
         </div>
-        <button type="submit" class="btn btn-light mt-2">Enviar</button>
+        <button type="submit" class="btn btn-light mt-2" [disabled]="!contactForm.valid">Enviar</button>
       </form>
     </div>
   </section>
