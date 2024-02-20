@@ -1,33 +1,61 @@
 @import "/src/variables";
 
-section {
+.container-fluid {
+  padding: 20px;
+}
+
+h2 {
+  color: #f8f9fa;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
   color: $secondary-color;
-
+  padding: 20px;
+  justify-content: space-around;
 }
-
-.form-control {
-  background-color: #333;
-  border: 1px solid #555;
-  color: $secondary-color;
+.contact-item a{
+  color: inherit;
+  text-decoration: none;
 }
-
-.form-control::placeholder {
-  color: #aaa;
-}
-
-.form-control:focus {
-  background-color: #444;
-  border-color: #aaa;
+.container {
+  background-color: #20232a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-light {
-  border: 1px solid #fff;
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-light:hover {
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #36a9e1;
 }
 
+.form-group {
+  margin-bottom: 15px;
+  // border: 5px solid blue;
+}
 
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: $secondary-color;
+}
 
+.fa-solid {
+  margin-right: 10px;
+}
+
+@media all and (max-width: 750px) {
+  .contact-container {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
