@@ -24,28 +24,6 @@
           filter: brightness(100%) contrast(110%);
         }
       }
-
-      .carousel-caption {
-        // Style for the caption area
-        background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
-        padding: 1rem;
-        border-radius: 0.5rem;
-        transition: background-color 0.5s ease;
-
-        h3 {
-          color: $secondary-color;
-          font-weight: bold;
-          margin-bottom: 0.5rem;
-        }
-
-        p {
-          color: $secondary-color; // Light color for text
-        }
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.7); // Darken background on hover
-        }
-      }
     }
   }
 

@@ -23,21 +23,29 @@ export class ContactComponent {
   });
 
   async send() {
-    if (this.contactForm.valid) {
-      emailjs.init('rsiUmPMx9eew9V6y1');
-      let response = await emailjs.send('service_tbbzfaj', 'template_nvh2n5h', {
-        from_name: this.contactForm.value.from_name,
-        from_lastName: this.contactForm.value.from_lastName,
-        to_name: this.contactForm.value.to_name,
-        from_email: this.contactForm.value.from_email,
-        from_date: this.contactForm.value.from_date,
-        message: this.contactForm.value.message,
-      });
-    } else {
-      console.error('Form is not valid.');
-    }
+    emailjs.init('JxxvGEESDPdmdA-uO');
+    let response = await emailjs.send('service_zxbkjqc', 'template_fd7q2qq', {
+      from_name: this.contactForm.value.from_name,
+      from_lastName: this.contactForm.value.from_lastName,
+      to_name: this.contactForm.value.to_name,
+      from_email: this.contactForm.value.from_email,
+      from_date: this.contactForm.value.from_date,
+      message: this.contactForm.value.message,
+    });
+
+    console.log('mensaje enviado!');
 
     alert('mensaje enviado!');
     this.contactForm.reset();
   }
 }
+
+/* emailjs.send("service_zxbkjqc","template_fd7q2qq",{
+from_name: "valerio",
+to_name: "valerio",
+message: "test",
+reply_to: "test",
+from_lastName: "valerio",
+from_email: "test",
+from_phoneNo: "test",
+}); */
