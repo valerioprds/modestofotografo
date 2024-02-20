@@ -23,6 +23,7 @@ import { DavidangelComponent } from './photogallery/davidangel/davidangel.compon
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DavidangelComponent,
     SandradiegoComponent,
     FooterComponent,
+    RafapaolaComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatDividerModule,
     MatDialogModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
