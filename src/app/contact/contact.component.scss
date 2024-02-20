@@ -5,8 +5,8 @@
 }
 
 h2 {
-  color: #f8f9fa;
-  margin-bottom: 30px;
+  color: $secondary-color;
+  margin-bottom: 10px;
 }
 
 .contact-container {
@@ -15,27 +15,28 @@ h2 {
   padding: 20px;
   justify-content: space-around;
 }
-.contact-item a{
+a {
   color: inherit;
   text-decoration: none;
 }
 .container {
+  color: $secondary-color;
   background-color: #20232a;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px #4f4c4c6a;
 }
 
 .btn-light {
-  background-color: #61dafb;
-  color: #282c34;
+  background-color: #282c34;
+  color: white;
   padding: 10px 20px;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
 .btn-light:hover {
-  background-color: #36a9e1;
+  background-color: #4c5462;
 }
 
 .form-group {
