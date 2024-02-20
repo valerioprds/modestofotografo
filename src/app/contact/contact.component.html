@@ -31,7 +31,11 @@
           modestofotoestudio@gmail.com</a
         >
       </p>
-      <form>
+      <form
+        [formGroup]="contactForm"
+        action="javascript:void(0)"
+        (submit)="send()"
+      >
         <div class="form-group">
           <label for="firstName">Nombre</label>
           <input
@@ -39,7 +43,22 @@
             class="form-control"
             id="firstName"
             placeholder="¿Cuál es tu nombre?"
+            formControlName="from_name"
           />
+          <div *ngIf="contactForm.get('from_name')?.touched">
+            <span
+              *ngIf="contactForm.get('from_name')?.hasError('required')"
+              class="text-danger error-label"
+            >
+              El nombre es <strong>obligatorio</strong>
+            </span>
+            <span
+              *ngIf="contactForm.get('from_name')?.hasError('minlength')"
+              class="text-danger error-label"
+            >
+              el nombre tiene que tener minimo <strong>3 letras</strong>
+            </span>
+          </div>
         </div>
         <div class="form-group">
           <label for="lastName">Apellido</label>
@@ -48,16 +67,50 @@
             class="form-control"
             id="lastName"
             placeholder="¿Cuál es tu apellido?"
+            formControlName="from_lastName"
           />
+          <div *ngIf="contactForm.get('from_lastName')?.touched">
+            <span
+              *ngIf="contactForm.get('from_lastName')?.hasError('required')"
+              class="text-danger error-label"
+            >
+              El apellido es <strong>obligatorio</strong>
+            </span>
+            <span
+              *ngIf="contactForm.get('from_lastName')?.hasError('minlength')"
+              class="text-danger error-label"
+            >
+              el apellido tiene que tener minimo <strong>3 letras</strong>
+            </span>
+          </div>
         </div>
         <div class="form-group">
           <label for="phoneNumber">Tu número de teléfono</label>
           <input
-            type="tel"
+            type="text"
             class="form-control"
             id="phoneNumber"
-            placeholder="Tu número de teléfono, por favor."
+            placeholder="Tu número de teléfono"
+            formControlName="from_phoneNo"
+            pattern="\d*"
+            minlength="9"
+            maxlength="15"
           />
+          <div *ngIf="contactForm.get('from_phoneNo')?.touched">
+            <span
+              *ngIf="contactForm.get('from_phoneNo')?.hasError('required')"
+              class="text-danger error-label"
+            >
+              El número de teléfono es <strong>obligatorio</strong>
+            </span>
+            <span
+              *ngIf="contactForm.get('from_phoneNo')?.hasError('minlength')"
+              class="text-danger error-label"
+            >
+              El número de teléfono tiene que tener minimo
+              <strong>9 digitos</strong>
+            </span>
+          </div>
         </div>
         <div class="form-group">
           <label for="emailAddress">Correo electrónico</label>
@@ -66,7 +119,22 @@
             class="form-control"
             id="emailAddress"
             placeholder="Tu correo electrónico"
+            formControlName="from_email"
           />
+          <div *ngIf="contactForm.get('from_email')?.touched">
+            <span
+              *ngIf="contactForm.get('from_email')?.hasError('required')"
+              class="text-danger error-label"
+            >
+              El correo es <strong>obligatorio</strong>
+            </span>
+            <span
+              *ngIf="contactForm.get('from_email')?.hasError('email')"
+              class="text-danger error-label"
+            >
+              El correo <strong>no es correcto</strong>
+            </span>
+          </div>
         </div>
         <div class="form-group">
           <label for="message">Mensaje</label>
@@ -74,8 +142,23 @@
             class="form-control"
             id="message"
             rows="3"
-            placeholder="Tu Mensaje"
+            placeholder="Tu mensaje"
+            formControlName="message"
           ></textarea>
+          <div *ngIf="contactForm.get('message')?.touched">
+            <span
+              *ngIf="contactForm.get('message')?.hasError('required')"
+              class="text-danger error-label"
+            >
+              El mensaje es <strong>obligatorio</strong>
+            </span>
+            <span
+              *ngIf="contactForm.get('message')?.hasError('minlength')"
+              class="text-danger error-label"
+            >
+              El mensaje tiene que tener minimo <strong>10 caracteres</strong>
+            </span>
+          </div>
         </div>
         <button type="submit" class="btn btn-light mt-2">Enviar</button>
       </form>

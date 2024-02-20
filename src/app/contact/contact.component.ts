@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import emailjs from '@emailjs/browser';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -10,9 +12,27 @@ export class ContactComponent {
   telefono: string = '+34 123 456 789';
   instagramUsername: string = 'tu_usuario';
 
-  constructor() {}
-  onSubmit() {
-    // Implement your form submission logic here
-    console.log('Form submitted');
+  constructor(private fb: FormBuilder) {}
+  contactForm: FormGroup = this.fb.group({
+    from_name: ['', [Validators.required, Validators.minLength(3)]],
+    from_lastName: ['', [Validators.required, Validators.minLength(3)]],
+    from_phoneNo: ['', [Validators.required, Validators.minLength(6)]],
+    to_name: 'Modesto',
+    from_email: ['', [Validators.required, Validators.email]],
+    message: ['', [Validators.required, Validators.minLength(10)]],
+  });
+
+  async send() {
+    emailjs.init('rsiUmPMx9eew9V6y1');
+    let response = await emailjs.send('service_tbbzfaj', 'template_nvh2n5h', {
+      from_name: this.contactForm.value.from_name,
+      from_lastName: this.contactForm.value.from_lastName,
+      to_name: this.contactForm.value.to_name,
+      from_email: this.contactForm.value.from_email,
+      message: this.contactForm.value.message,
+    });
+
+    alert('mensaje enviado!');
+    this.contactForm.reset();
   }
 }

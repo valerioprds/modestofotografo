@@ -22,6 +22,8 @@ import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.com
 import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -48,6 +50,7 @@ import { FooterComponent } from './footer/footer.component';
     MatIconModule,
     MatDividerModule,
     MatDialogModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],
