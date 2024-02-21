@@ -20,12 +20,12 @@
   border-radius: 0.25rem;
   font-size: 1.10rem;
   transition: transform 0.3s ease-in-out;
-  transform: translateY(10px); 
+  transform: translateY(10px);
 }
 
 .card {
   transition: transform 0.3s ease-in-out; /* Ensure smooth scaling */
-}
+  }
 
 .card:hover {
   transform: scale(1.05); /* Scale up on hover */
