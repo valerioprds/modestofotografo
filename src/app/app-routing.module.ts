@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
-import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,7 +17,6 @@ const routes: Routes = [
     component: WeddingsComponent,
   },
   { path: 'bea-iñigo', component: InigobeaComponent },
-  { path: 'carla-marcos', component: CarlamarcosComponent },
   { path: 'david-angel', component: DavidangelComponent },
   { path: 'sandra-diego', component: SandradiegoComponent },
   { path: 'rafa-paola', component: RafapaolaComponent },

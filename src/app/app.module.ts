@@ -18,13 +18,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
 import { WeddingsComponent } from './photogallery/weddings/weddings.component';
 import { InigobeaComponent } from './photogallery/inigobea/inigobea.component';
-import { CarlamarcosComponent } from './photogallery/carlamarcos/carlamarcos.component';
 import { DavidangelComponent } from './photogallery/davidangel/davidangel.component';
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component';
-
 
 @NgModule({
   declarations: [
@@ -36,7 +34,7 @@ import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component
     ContactComponent,
     WeddingsComponent,
     InigobeaComponent,
-    CarlamarcosComponent,
+
     DavidangelComponent,
     SandradiegoComponent,
     FooterComponent,
@@ -52,7 +50,7 @@ import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component
     MatIconModule,
     MatDividerModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
