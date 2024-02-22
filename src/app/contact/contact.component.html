@@ -92,9 +92,6 @@
             id="phoneNumber"
             placeholder="Tu número de teléfono"
             formControlName="from_phoneNo"
-            pattern="\d*"
-            minlength="9"
-            maxlength="15"
           />
           <div *ngIf="contactForm.get('from_phoneNo')?.touched">
             <span
@@ -169,7 +166,13 @@
             </span>
           </div>
         </div>
-        <button type="submit" class="btn btn-light mt-2">Enviar</button>
+        <button
+          type="submit"
+          class="btn btn-light mt-2"
+          [disabled]="!contactForm.valid"
+        >
+          Enviar
+        </button>
       </form>
     </div>
   </section>

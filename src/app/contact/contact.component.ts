@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact',
@@ -16,7 +17,7 @@ export class ContactComponent {
   contactForm: FormGroup = this.fb.group({
     from_name: ['', [Validators.required, Validators.minLength(3)]],
     from_lastName: ['', [Validators.required, Validators.minLength(3)]],
-    from_phoneNo: ['', [Validators.required, Validators.minLength(6)]],
+    from_phoneNo: ['', [Validators.required, Validators.minLength(9)]],
     to_name: 'Modesto',
     from_email: ['', [Validators.required, Validators.email]],
     message: ['', [Validators.required, Validators.minLength(10)]],
@@ -35,7 +36,11 @@ export class ContactComponent {
 
     console.log('mensaje enviado!');
 
-    alert('mensaje enviado!');
+    Swal.fire({
+      title: 'Gracias!',
+      text: 'He recibido tu mensaje y te contestaré en seguida!',
+      icon: 'success',
+    });
     this.contactForm.reset();
   }
 }
