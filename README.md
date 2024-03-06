@@ -1,27 +1,42 @@
-# Modesto
+# Fotografo de Bodas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+Welcome to the repository for the "Fotografo de Bodas" project, a sophisticated Angular-based web application designed to showcase wedding photography services. This project leverages the latest in web technologies to provide a seamless and engaging user experience.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+"Fotografo de Bodas" is built using Angular, a platform and framework for building single-page client applications using HTML and TypeScript. The project is structured to offer a comprehensive suite of wedding photography services, presented through a beautifully designed interface.
 
-## Code scaffolding
+Visit the live site: [https://fotografobodasnavarra.com/](https://fotografobodasnavarra.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Before you begin, ensure you have the latest version of Node.js installed, which includes npm (Node Package Manager). This project was developed with specific dependencies on Angular, Bootstrap, SweetAlert2, and more, as outlined in the `package.json` file.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository to your local machine: git clone https://github.com/yourgithubusername/fotografodebodas.git
+2. Navigate to the project directory: cd fotografodebodas
+3. Install the project dependencies: npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Built With
+
+- [@angular/core](https://angular.io/) - The web framework used
+- [Bootstrap](https://getbootstrap.com/) - Responsive design and styling
+- [SweetAlert2](https://sweetalert2.github.io/) - Beautiful, responsive, customizable, accessible replacement for JavaScript popup boxes
+- [rxjs](https://rxjs.dev/) - Reactive Extensions Library for JavaScript
+- Plus other dependencies listed in the `package.json` file.
+
+## Authors
+
+- **Valerio Paradiso** - *Initial work* - [FotografoDeBodas](https://github.com/valerioprds)
+
+
+
+
+
