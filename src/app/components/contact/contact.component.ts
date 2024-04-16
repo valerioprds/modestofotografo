@@ -30,8 +30,8 @@ export class ContactComponent {
       from_lastName: this.contactForm.value.from_lastName,
       to_name: this.contactForm.value.to_name,
       from_email: this.contactForm.value.from_email,
-      from_date: this.contactForm.value.from_date,
       message: this.contactForm.value.message,
+      from_phoneNo: this.contactForm.value.from_phoneNo,
     });
 
     console.log('mensaje enviado!');
