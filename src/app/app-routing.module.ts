@@ -11,23 +11,18 @@ import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'profile', component: ProfileComponent },
-  {
-    path: 'weddings',
-    component: WeddingsComponent,
-  },
-  { path: 'bea-iñigo', component: InigobeaComponent },
-  { path: 'david-angel', component: DavidangelComponent },
-  { path: 'sandra-diego', component: SandradiegoComponent },
-  { path: 'rafa-paola', component: RafapaolaComponent },
-
+  { path: 'sobre-modesto', component: ProfileComponent },
+  { path: 'bodas', component: WeddingsComponent },
+  { path: 'boda-bea-iñigo', component: InigobeaComponent },
+  { path: 'boda-david-angel', component: DavidangelComponent },
+  { path: 'boda-sandra-diego', component: SandradiegoComponent },
+  { path: 'boda-rafa-paola', component: RafapaolaComponent },
   { path: 'contacto', component: ContactComponent },
-
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: false})],
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
