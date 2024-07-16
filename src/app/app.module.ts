@@ -23,6 +23,7 @@ import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.com
 import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component';
+import { ErosAngelaComponent } from './photogallery/eros-angela/eros-angela.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component
     SandradiegoComponent,
     FooterComponent,
     RafapaolaComponent,
+    ErosAngelaComponent,
   ],
   imports: [
     BrowserModule,

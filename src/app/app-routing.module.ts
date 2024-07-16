@@ -8,6 +8,7 @@ import { DavidangelComponent } from './photogallery/davidangel/davidangel.compon
 import { SandradiegoComponent } from './photogallery/sandradiego/sandradiego.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { RafapaolaComponent } from './photogallery/rafapaola/rafapaola.component';
+import { ErosAngelaComponent } from './photogallery/eros-angela/eros-angela.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'boda-david-angel', component: DavidangelComponent },
   { path: 'boda-sandra-diego', component: SandradiegoComponent },
   { path: 'boda-rafa-paola', component: RafapaolaComponent },
+  { path: 'eros-angela', component: ErosAngelaComponent },
   { path: 'contacto', component: ContactComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
